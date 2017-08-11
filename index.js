@@ -14,7 +14,7 @@ function hoodieMiddleware(config) {
   var appConfig = this.project.config(config.options.environment);
   /* jshint +W040 */
 
-  if (!appConfig.hoodie) {
+  if (!appConfig.hoodie.server) {
     return;
   }
 
